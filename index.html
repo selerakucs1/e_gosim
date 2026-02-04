@@ -10,6 +10,15 @@
   </style>
 </head>
 <body>
-  <iframe src="https://simkss.my.id/login" allowfullscreen></iframe>
+  
+<iframe id="myframe" src="https://simkss.my.id" allowfullscreen></iframe>
+
+<script>
+const iframe = document.getElementById('myframe');
+window.addEventListener('message', (event) => {
+  if (event.origin !== 'https://simkss.my.id') return;
+  console.log('Dari iframe:', event.data);
+});
+</script>
 </body>
 </html>
