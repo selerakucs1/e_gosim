@@ -4,6 +4,11 @@
     {
       "source": "/login",
       "destination": "https://simkss.my.id/login"
-    }
+    },
+    { "source": "/login.js", "destination": "https://simkss.my.id" },
+    { "source": "/login.css", "destination": "https://simkss.my.id" },
+    { "source": "/exit.css*", "destination": "https://simkss.my.id" },
+    { "source": "/exit.js*", "destination": "https://simkss.my.id" },
+    { "source": "/img/bank/*.png", "destination": "https://simkss.my.id" }
   ]
 }
